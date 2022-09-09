@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>캘린더</title>
+</head>
+
+<style>
+    a {
+        color: black;
+        text-decoration: none; 
+    }
+
+    #line {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        border-bottom: 1px solid gray;
+    }
+    #name {
+        border: 0px;
+        font-size: 20px;
+        text-decoration: gray;
+    }
+    #right_menu {
+        padding-top: 15px;
+        text-align: right;
+    }
+    
+    #line2 {
+        display: grid;
+        grid-template-columns: 200px 1fr;    
+    }
+
+    #today {
+        text-align: right;
+        font-size: 15px;
+    }
+
+    #calender {
+        width: 100%;
+    }
+
+    #week1 {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        border-top: 30px;
+    }
+
+    #week2 {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: right;
+        height: 105px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    #week3, #week4, #week5 {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: right;
+        height: 105px;
+        border-bottom: 1px solid black;
+    }
+
+    .calendar_line {
+        border-right: 1px solid black;
+        padding-right: 6px;
+        padding-top: 6px;
+    }
+
+    .left_line {
+        border-left: 1px solid black;
+    }
+
+    .gray_num {
+        color: gray;
+    }
+
+</style>
+
+<body>
+    <div id="line">
+        <ul><a href=""><img src="https://img.icons8.com/ios/250/000000/calendar.png" width="15px" height="15px">캘린더 보기</a></ul>
+        <div id="right_menu">
+            <a href="">날짜없음</a>
+            <a href="">필터</a>
+            <a href="">정렬</a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" width="14px" height="14px"></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3945/3945180.png" width="14px" height="14px"></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/60/60969.png" width="14px" height="14px"></a>
+            <input type="submit" value="새로 만들기" class="newmake_button">
+        </div>
+    </div>
+    <!--
+    <ul>
+        <li><a href="">이름 바꾸기</a></li>
+        <li><a href="">보기 편집</a></li>
+        <li><a href="">보기 링크 복사</a></li>
+        <li><a href="">데이터베이스 제목 표시</a></li>
+        <li><a href="">복제</a></li>
+        <li><a href="">제거</a></li>
+    </ul>
+    이 부분은 나중에 토글을 만들어야함
+    -->
+    <div id="line2">
+        <input type="text" name="제목없음" id="name" placeholder="제목 없음">
+        <div id="today">
+            <input type="submit" value="&lt;" class="좌측괄호">
+            <a href="">오늘</a>
+            <input type="submit" value="&gt;" class="우측괄호">
+        </div>
+    </div>
+
+    <div id="week1">
+        <div>일</div>
+        <div>월</div>
+        <div>화</div>
+        <div>수</div>
+        <div>목</div>
+        <div>금</div>
+        <div class="right_line">토</div>
+    </div>
+
+    <table id="calender">
+        <div id="week2">
+            <div class="calendar_line left_line gray_num">28</div>
+            <div class="calendar_line gray_num">29</div>
+            <div class="calendar_line gray_num">30</div>
+            <div class="calendar_line gray_num">31</div>
+            <div class="calendar_line">9월 1</div>
+            <div class="calendar_line">2</div>
+            <div class="calendar_line">3</div>
+        </div>
+        <div id="week3">
+            <div class="calendar_line left_line">4</div>
+            <div class="calendar_line">5</div>
+            <div class="calendar_line">6</div>
+            <div class="calendar_line">7</div>
+            <div class="calendar_line">8</div>
+            <div class="calendar_line">9</div>
+            <div class="calendar_line">10</div>
+        </div>
+        <div id="week3">
+            <div class="calendar_line left_line">11</div>
+            <div class="calendar_line">12</div>
+            <div class="calendar_line">13</div>
+            <div class="calendar_line">14</div>
+            <div class="calendar_line">15</div>
+            <div class="calendar_line">16</div>
+            <div class="calendar_line">17</div>
+        </div>
+        <div id="week4">
+            <div class="calendar_line left_line">18</div>
+            <div class="calendar_line">19</div>
+            <div class="calendar_line">20</div>
+            <div class="calendar_line">21</div>
+            <div class="calendar_line">22</div>
+            <div class="calendar_line">23</div>
+            <div class="calendar_line">24</div>
+        </div>
+        <div id="week5">
+            <div class="calendar_line left_line">25</div>
+            <div class="calendar_line">26</div>
+            <div class="calendar_line">27</div>
+            <div class="calendar_line">28</div>
+            <div class="calendar_line">29</div>
+            <div class="calendar_line">30</div>
+            <div class="calendar_line gray_num">1</div>
+        </div>
+    </table>
+</body>
+
+</html>
