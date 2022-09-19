@@ -1,0 +1,60 @@
+#container {
+    display: grid;
+    padding: 15px;
+}
+
+#row1 {
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 25pt;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 1400px;
+}
+
+::placeholder {
+    color:silver;
+}
+
+#row2 {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    border-bottom: 1px solid rgb(222, 221, 221);
+    padding-bottom: 10px;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: rgb(232, 232, 232);
+    cursor: pointer; /*커서 모양*/
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed; /*위치 고정*/
+    top: 120px;
+    left: 23px;
+    bottom: 326px;
+    right: 532px;
+    z-index: 1;
+    width: 200px;
+    height: 135px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px rgb(137, 137, 137);
+}
+
+.dropdown-content a {
+    display: block;
+    padding-left: 20px;
+    margin: 5px 0px 5px 0px;
+}
