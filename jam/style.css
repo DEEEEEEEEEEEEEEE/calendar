@@ -20,20 +20,19 @@
 }
 
 #row2 {
-    display: grid;
-    grid-template-columns: 130px 1fr;
+    display: flex;
     border-bottom: 1px solid rgb(222, 221, 221);
     padding-bottom: 10px;
 }
 
-.button {
+button {
     background: none;
     border: none;
     font-size: 17px;
     border-radius: 3px;
 }
 
-.button:hover {
+button:hover {
     background: rgb(232, 232, 232);
     cursor: pointer; /*커서 모양*/
 }
@@ -57,4 +56,39 @@
     display: block;
     padding-left: 20px;
     margin: 5px 0px 5px 0px;
+}
+
+#row3 {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+
+.month-year {
+    margin-right: auto;
+}
+
+#row4 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgb(160, 160, 160);
+}
+
+#row5 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    text-align: right;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#row5 div {
+    height: 105px;
+    padding: 10px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="달력.ico" type="image/x-icon">
+    <title>Calender</title>
+</head>
+<body>
+    <div id="container">
+        <div id="row1">
+            <input class="title" type="text" placeholder="Untitled">
+        </div>
+        <div id="row2">
+            <div class="dropdown">
+            <button class="dropdown-button"><img src="달력.ico" width="15" height="15"> 캘린더 보기</button>
+            <div class="dropdown-content">
+                <a hreaf='#'><img src="https://super.so/icon/dark/edit.svg" width="15" height="15"> Rename</a>
+                <a hreaf='#'><img src="https://super.so/icon/dark/settings.svg" width="15" height="15"> Edit view</a>
+                <a hreaf='#'><img src="https://super.so/icon/dark/link.svg" width="15" height="15"> Copy link to view</a>
+                <a hreaf='#'><img src="https://super.so/icon/dark/copy.svg" width="15" height="15"> Duplicate</a>
+                <a hreaf='#'><img src="https://super.so/icon/dark/trash-2.svg" width="15" height="15"> Delete</a>
+            </div>
+            </div>
+        </div>
+        <div id="row3">
+            <span class="month-year">September 2022</span>
+            <div> <!--양끝 정렬 위해서 따로 묶어줌-->
+                <button>&lt</button>
+                <button>Today</button>
+                <button>&gt</button>
+            </div>
+        </div>
+        <div id="row4">
+        </div>
+        <div id="row5">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
