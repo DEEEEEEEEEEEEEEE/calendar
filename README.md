@@ -1,6 +1,6 @@
 # calendar
 
-<To do list>
+To do list
  
  09/29
 - 제목 입력 이벤트
