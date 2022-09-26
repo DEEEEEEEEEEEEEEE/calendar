@@ -92,3 +92,11 @@ button:hover {
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
 }
+
+#row5 div:nth-child(7n) {
+    background-color: #f8f8f8;
+}
+
+#row5 div:nth-child(7n+1) {
+    background-color: #f8f8f8;
+}
